@@ -10,4 +10,13 @@ public class MainObject {
     private MainObject() {
         PageFactory.initElements(Setup.driver, this);
     }
+
+    @FindBy(xpath = "//*[@class='modal-wmfin']")
+    public WebElement askForSignUpPopUp;
+
+    @FindBy(xpath = "//*[@id='cpwm-additionaldisclaimer3']")
+    public WebElement askForSignUpPopUpCloseBytton;
+
+    @FindBy(xpath = "//*[@class = 'ml-header-global-cart-text  ml-wm-empty-cart-icon']")
+    public WebElement cartButton;
 }
