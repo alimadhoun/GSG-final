@@ -10,7 +10,7 @@ public class Setup {
     @Test
     public void setUp() {
         ChromeOptions options= new ChromeOptions();
-//        options.addArguments("--headless");
+        options.addArguments("--headless");
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
